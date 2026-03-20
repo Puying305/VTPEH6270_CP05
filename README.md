@@ -29,10 +29,32 @@ This repository contains data, scripts, and output files from multiple checkpoin
 - CP04: simulation of the relationship between exercise and poor mental health days
 
 ## Data Source
-New York State Department of Health BRFSS 2023 survey data.
+New York State Department of Health BRFSS 2023 survey data. The original BRFSS dataset is very large (about 167MB), so it is not included in this repository. Instead, a smaller subset of the data (3,000 observations with selected variables) is provided so that the analysis and simulation scripts can still run properly.
+
+## Notes
+All files are included for course project documentation and reproducibility.
+
+## Reproducibility Notes
+The repository includes a reduced subset dataset (`brfss_subset_small.csv`) so the scripts can run without the original large BRFSS file.
+
+To reproduce the work:
+1. Open the relevant `.Rmd` file in RStudio.
+2. Make sure required R packages are installed.
+3. Run the code in the corresponding checkpoint file (CP02, CP03, or CP04).
+
+## Required Packages
+This project uses common R packages for data analysis and visualization, including packages such as `ggplot2`, `dplyr`, and `knitr` where applicable.
+
+## Repository Structure
+- `data/`: contains the cleaned subset dataset used for analysis
+- `scripts/`: R Markdown files for CP02, CP03, and CP04
+- `output/`: rendered PDF reports and related output files
+This structure is designed to improve clarity, organization, and reproducibility.
+
+## Notes on Data
+The original BRFSS dataset is not included because of its large file size. A reduced subset is provided for reproducibility and contains the key variables needed for analysis.
 
 ## AI Tool Disclosure
 ChatGPT was used to help organize repository structure, troubleshoot code issues, and improve wording. All final code, decisions, and interpretations were reviewed and edited by the author.
 
-## Notes
-All files are included for course project documentation and reproducibility.
+
